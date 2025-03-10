@@ -31,13 +31,13 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-application {
-    mainClass.set("at.aau.serg.SpringApp.kt")
-}
-
 tasks.withType<Test> {
     useJUnitPlatform()
 }
 kotlin {
     jvmToolchain(21)
+}
+
+application {
+    mainClass.set("at.aau.serg.SpringAppKt")
 }
